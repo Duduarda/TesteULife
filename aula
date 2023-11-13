@@ -38,6 +38,11 @@
             <version>4.13.0</version>
             <scope>test</scope>
         </dependency>-->
+        <dependency>
+		<groupId>com.sun.mail</groupId>
+		<artifactId>javax.mail</artifactId>
+		<version>1.6.2</version>
+	    </dependency>
     </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -92,13 +97,16 @@ public class VerificarNFULife {
         driver.findElement(By.id("ct100_b_imbLogin")).click();
         
         //clicar em extrato financeiro
-        driver.findElement(By.ByLinkText("https://social.ulife.com.br/ToolIntegration/Index?id=zGh0CGhC7fzwgQ5U0vccDQ%3d%3d\").click;
+        driver.findElement(By.ByLinkText("Extrato Financeiro").click;
         
         //buscar dentro de uma busca
-        WebElement test = driver.findElement(By.id("id"));
-        test.findElement(By.cssSelector("ul > li > a ")).findElement(By)
+        //WebElement test = driver.findElement(By.id("id"));
+        //test.findElement(By.cssSelector("ul > li > a ")).findElement(By)
+
+        //clicar em gerar declaração
+        driver.findElement(By.className("v-btn v-btn--is-elevated v-btn--has-bg theme--light v-size--large primary")).click();
         
-       
+           
         //Close the browser
         driver.quit();
 
@@ -106,3 +114,5 @@ public class VerificarNFULife {
        
   }
     
+// pesquisar por java gmail smtp - https://mkyong.com/java/javamail-api-sending-email-via-gmail-smtp-example/; 
+//uom smtp conf - https://faq.uolhost.uol.com.br/content/quais-os-servidores-imap-e-smtp-do-e-mail-profissional
